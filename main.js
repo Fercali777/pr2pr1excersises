@@ -117,10 +117,126 @@ sumarA ();
 
 // exercise 12
 
-// function multiply (){
-//      let resultMultiply = 2 * 5;
-//      console.log (resultMultiply);
+function multiply (){
+     let resultMultiply = 2 * 7;
+     console.log (resultMultiply);
+}
+multiply ();
 
-// }
+// exercise 13
 
-// multiply ();
+function multiplyParameters (a, b){
+    let resoultMultiplyParameters = (a * b);
+    console.log ("Resoult Multiply Parameters: ", resoultMultiplyParameters);
+    return (resoultMultiplyParameters);
+}
+
+multiplyParameters (5, 6);
+
+multiplyParameters (45, 6);
+
+multiplyParameters (5, 16);
+
+
+// exercise 14
+
+function sidesTriangle (sideA, sideB, sideC){
+  if (sideA === sideB && sideA === sideC){
+    console.log ("equilateral triangle");
+  } else if (sideA === sideB || sideA === sideC || sideB === sideC){
+    console.log ("Isoceles Trienagle");
+  } else {
+    console.log("Scalene Triangle");
+  }
+ 
+}
+
+sidesTriangle (5, 5, 5);
+sidesTriangle (5, 5, 6);
+sidesTriangle (5, 6, 7);
+
+// excercise 15
+
+
+const numbers = [10, 20, 50, 60, 30, 40];
+
+
+let min = Math.min (...numbers);
+console.log (min);
+
+
+function minNumber (na, nb, nc, nd, ne){
+    const numbers = [na, nb, nc, nd, ne];
+    let min = Math.min (...numbers);
+    console.log ("Minimun Number", min)
+}
+minNumber (20, 30, 10, 40, 50);
+
+// excercise 16
+
+function maxNumber (...maxnumbs){
+    const numbers = [...maxnumbs];
+    let max = Math.max (...numbers);
+    console.log ("Max Number: ", max);
+}
+
+maxNumber  (2, 3, 4, 1, 15, 16 , 7);
+
+
+// excercise 17
+
+
+
+function findIndex1 (array, index) {
+    
+    const findIndex= array[index];
+    console.log ("Find index 1: ", findIndex);
+}
+
+findIndex1 ([3,6,67,6,23,11,100,8,93,0,17,24,7,1,33,45,28,33,23,12,99,100], 9);
+
+
+const arrayFind = [3,6,67,6,23,11,100,8,93,0,17,24,7,1,33,45,28,33,23,12,99,100];
+let findIndex2 = arrayFind[2];
+console.log ("Find index 2: ", findIndex2);
+
+// excercise 18
+
+
+const myColor = ["Red", "Green", "White", "Black"];
+let sumColors= "";
+    for (i=0; i < myColor.length; i++){
+        let = sumColors += myColor[i]  ;
+        let = sumColors += " "  ;
+    }
+
+    console.log (sumColors);
+
+
+    
+// exercise 19
+
+
+
+let reverseNumx = 12345;
+let arrayConx = reverseNumx.toString().split("");
+let arrayReversex = arrayConx.reverse();
+console.log (arrayConx);
+
+
+function numberForReverse (numberz){
+    let numComb = numberz.toString().split("");
+    let sumArrayNumber= "";
+    let arrayInverse = numComb.reverse();
+    for (i=0; i < numComb.length; i++){
+        let = sumArrayNumber += numComb[i];  
+    } 
+    console.log ("Sum array:", sumArrayNumber);
+}
+
+numberForReverse (56789);
+
+// exercise 20
+
+
+
