@@ -1,72 +1,79 @@
 
-console.log ('Hello JavaScript World');
-let myName ="Cali";
-let myAge = 36;
-let juliaName ="Julia";
-let juliaAge = 15;
-let ageDriff = (myAge - juliaAge);
 
-console.log ("age diference=", ageDriff);
+// exercise 1
+ const myName = "Fer";
+ console.log ("EX1 My name is", myName);
+
+ // exercise 2
+
+const myAge = "36";
+console.log ("EX2 My age is: ", myAge);
+
+// exercise 3
+
+const juliaAge = 39;
+let ageDriff = (juliaAge - myAge);
+console.log ("Ex3 The Diference age Julia and Fer: ", ageDriff);
+
 
 // exercise 4
 
 if (myAge > 21){
-    console.log("You are older than 21")
+    console.log("EX4 You are older than 21")
 }
 else {
-    console.log("You are younger than 21")
+    console.log("EX4 You are younger than 21")
 }
 
 // exercise 5
 
 if (juliaAge > myAge){
-    console.log("You are younger than Julia")
+    console.log("Ex5 You are younger than Julia")
 }
 else if(juliaAge == myAge) {
-    console.log ("You and Julia are the same age ")
+    console.log ("EX5 You and Julia are the same age ")
 }
 else {console.log ("You are older than Julia")}
 
 // exercise 6
-console.log ("exercise 6")
 
 let classNames =[
     "Ali", "Max", "Raul", "Lucas", "Emely" 
 ];
-console.log (classNames[0]);
-console.log (classNames[classNames.length -1]);
+console.log ("Ex6 first class name: ", classNames[0]);
+console.log ("Ex6 last name: ", classNames[classNames.length -1]);
 
+
+for (let i = 0; i < classNames.length; i++) {
+  console.log ("Ex6 loop name: ", classNames[i]);
+}
+
+
+let sumNames = "";
 for (let i=0; i<classNames.length; i++ ){
-    console.log ("name", classNames[i]);
+    let sumNamesLet = sumNames += classNames[i];
+    let  = sumNames += " ";
 }
-
-let cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
-
-for (let i = 0; i < cars.length; i++) {
-  console.log (cars[i]);
-}
+console.log ("Ex6 Consolidation names: ", sumNames); 
 
 
 // exercise 7
 
 
 
-console.log ("exercise 7");
-
 let ageStudents = [26,30,35,34,30,30,30,30];
 let i = 0;
 
 while (i < ageStudents.length){
     if (ageStudents[i] % 2 === 0){
-        console.log ("age", ageStudents[i]);
+        console.log ("Ex7 age While: ", ageStudents[i]);
     }
     i++;
-    
 }
 
 for (let i = 0; i < ageStudents.length; i++){
     if (ageStudents[i] %2 ===0){
-    console.log(ageStudents[i]);
+    console.log("Ex7 age for", ageStudents[i]);
     }
 }
 
@@ -75,14 +82,12 @@ for (let i = 0; i < ageStudents.length; i++){
 let suma = 0;
 
 for (let i = 0; i < ageStudents.length; i++){
-    
         suma  += ageStudents[i]; 
 }
-console.log ("Sume ages ", suma);
+console.log ("Ex8 Sum ages ", suma);
 
 
 // exercise 9
-// Use a loop to add the even numbers of an array. For example, const array = [1, 2, 8, 3, 2]; would result in the sum of 2 + 8 + 2, since they are even numbers. Print the result to the console.
 
 let sumEvenNumbers = 0;
 
@@ -91,7 +96,7 @@ for (let i = 0; i < ageStudents.length; i++){
 
     sumEvenNumbers += ageStudents[i];}
 }
-console.log ("Sum even Numbers:", sumEvenNumbers);
+console.log ("Ex9 Sum even Number:", sumEvenNumbers);
 
 // exercise 10
 
@@ -103,7 +108,7 @@ for (let i=0; i < ageStudents.length; i++){
     }
 }
 
-console.log ("Sum of even positions: ", sumIndexEven);
+console.log ("Ex 10 Sum of even index: ", sumIndexEven);
 
 
 // exercise 11
@@ -111,7 +116,7 @@ console.log ("Sum of even positions: ", sumIndexEven);
 function sumarA(){
     const num1 = 5;
     const num2 = 8;
-    console.log("Sum 2 numbers: ", num1 * num2);
+    console.log("Ex11 Sum 2 numbers: ", num1 * num2);
 }
 sumarA ();
 
@@ -119,7 +124,7 @@ sumarA ();
 
 function multiply (){
      let resultMultiply = 2 * 7;
-     console.log (resultMultiply);
+     console.log ("Ex12 multiply numbers: ", resultMultiply);
 }
 multiply ();
 
@@ -127,7 +132,7 @@ multiply ();
 
 function multiplyParameters (a, b){
     let resoultMultiplyParameters = (a * b);
-    console.log ("Resoult Multiply Parameters: ", resoultMultiplyParameters);
+    console.log ("Ex13 Resoult Multiply Parameters: ", resoultMultiplyParameters, "¿? Cómo usar Return");
     return (resoultMultiplyParameters);
 }
 
@@ -142,63 +147,60 @@ multiplyParameters (5, 16);
 
 function sidesTriangle (sideA, sideB, sideC){
   if (sideA === sideB && sideA === sideC){
-    console.log ("equilateral triangle");
+    console.log ("Ex14 equilateral triangle");
   } else if (sideA === sideB || sideA === sideC || sideB === sideC){
-    console.log ("Isoceles Trienagle");
+    console.log ("Ex14 Isoceles Trienagle");
   } else {
-    console.log("Scalene Triangle");
+    console.log("Ex14 Scalene Triangle");
   }
- 
 }
 
 sidesTriangle (5, 5, 5);
 sidesTriangle (5, 5, 6);
 sidesTriangle (5, 6, 7);
 
-// excercise 15
+console.log ("¿? if (sideA === sideB && sideA === sideC) Dónde mas podemos usar condiciones de esta manera");
+
+// exercise 15
 
 
 const numbers = [10, 20, 50, 60, 30, 40];
 
-
 let min = Math.min (...numbers);
-console.log (min);
 
-
-function minNumber (na, nb, nc, nd, ne){
-    const numbers = [na, nb, nc, nd, ne];
+function minNumber (...minNum){
+    const numbers = [...minNum];
     let min = Math.min (...numbers);
-    console.log ("Minimun Number", min)
+    console.log ("Ex15 Minimun Number", min)
 }
 minNumber (20, 30, 10, 40, 50);
+
 
 // excercise 16
 
 function maxNumber (...maxnumbs){
     const numbers = [...maxnumbs];
     let max = Math.max (...numbers);
-    console.log ("Max Number: ", max);
+    console.log ("Ex16 Max Number: ", max);
 }
-
 maxNumber  (2, 3, 4, 1, 15, 16 , 7);
+console.log ("¿? Còmo hacerlo sin method");
 
 
 // excercise 17
 
-
-
-function findIndex1 (array, index) {
-    
+function findIndex1 (array, index) { 
     const findIndex= array[index];
-    console.log ("Find index 1: ", findIndex);
+    console.log ("Ex 17 Find index 9 [3,6,67,6,23,11,100,8,93,0,17,24,7,1,33,45,28,33,23,12,99,100] : ", findIndex);
 }
 
 findIndex1 ([3,6,67,6,23,11,100,8,93,0,17,24,7,1,33,45,28,33,23,12,99,100], 9);
 
-
 const arrayFind = [3,6,67,6,23,11,100,8,93,0,17,24,7,1,33,45,28,33,23,12,99,100];
 let findIndex2 = arrayFind[2];
-console.log ("Find index 2: ", findIndex2);
+console.log ("Ex 17 Find index 2: ", findIndex2);
+
+console.log ("¿? es buena practica no usar funciones?, esta bien hecho el ejercicio?");
 
 // excercise 18
 
@@ -209,34 +211,160 @@ let sumColors= "";
         let = sumColors += myColor[i]  ;
         let = sumColors += " "  ;
     }
-
-    console.log (sumColors);
-
-
+    console.log ("Ex18 Sum Colors", sumColors);
     
 // exercise 19
+// let reverseNumx = 12345;
+// let arrayConx = reverseNumx.toString().split("");
+// let arrayReversex = arrayConx.reverse();
 
 
+// function numberForReverse (numberz){
+//     numComb = numberz.toString().split("");
+//     let sumArrayNumber= "";
+//     let arrayInverse = numComb.reverse();
+//     for (i=0; i < numComb.length; i++){
+//         let = sumArrayNumber += numComb[i];  
+//     } 
+//     console.log ("Ex19 Inverse Number:", sumArrayNumber);
+// }
 
-let reverseNumx = 12345;
-let arrayConx = reverseNumx.toString().split("");
-let arrayReversex = arrayConx.reverse();
-console.log (arrayConx);
+// numberForReverse (56789);
+
+
 
 
 function numberForReverse (numberz){
-    let numComb = numberz.toString().split("");
-    let sumArrayNumber= "";
-    let arrayInverse = numComb.reverse();
-    for (i=0; i < numComb.length; i++){
-        let = sumArrayNumber += numComb[i];  
-    } 
-    console.log ("Sum array:", sumArrayNumber);
-}
+    numComb = numberz.toString().split("").reverse().join("");
 
-numberForReverse (56789);
+    console.log ("Ex19:", numComb);
+    } 
+numberForReverse (12345);
+
+
 
 // exercise 20
 
+// Write a JavaScript function that returns a string in alphabetical order. 
+// For example, if const x = 'webmaster';, then the output should be 'abeemrstw'. 
+// Punctuation and numbers aren't passed in the string.
 
 
+function sortFunction (word){
+    separateA = word.split("").sort().join("");
+    console.log ("Ex20 reorder word: ", separateA);
+}
+
+sortFunction  ("webmaster");
+
+// exercise 21
+
+// Write a JavaScript function that finds the longest word in a phrase. 
+// For example, if const x = "Web Development Tutorial";, then the output should be "Development".
+
+function longerWord (words){
+    wordSeparate = words.split(" ");
+    let longerWordFin = "";
+    for (let i = 0; i< wordSeparate.length; i++){
+       let wordFinal = wordSeparate[i];
+       let wordFinal2 = wordSeparate[i++];
+       
+    
+
+       if(wordFinal.length <= wordFinal2.length ){
+        longerWordFin =  (wordFinal);
+
+       }
+       console.log ("longerWordFin:",longerWordFin);
+       console.log ("EX21 PR:", wordFinal.length, wordFinal, wordFinal2.length, wordFinal2,); 
+
+    }
+     
+}
+
+ 
+
+longerWord ("Web Development Tutorial");
+
+
+
+
+// let frase = ["Hola mundo, cómo estás"];
+// let palabras = frase[0].split(" "); // Separa por espacios
+
+// console.log(palabras);
+
+// exercise 26
+
+
+
+
+// function checkN (...numzz){
+//     for  (let i = 0 ; i < numzz.length; i++){
+
+//         if (numzz.every(num => num == numzz[i])){
+//             console.log ("Is a Duplicate number: ", numzz[i]);
+//         }
+//         else {
+//             console.log("is not a duplicate number")
+//         }
+
+        
+//         // let = consolNumbers += numbersForCheck[i];
+        
+//     }
+// }
+
+
+// --------------------------
+
+// function checkN(...numzz) {
+//     let count = new Map();
+//     let duplicateNumbers = "";
+
+//     for (let num of numzz) {
+//         count.set(num, (count.get(num) || 0) + 1);
+//     }
+
+//     for (let [key, value] of count.entries()) {
+//         if (value > 1) {
+//             let = duplicateNumbers += (`${key} `);
+//             console.log(`Is a Duplicate number: ${key}`);
+//         }
+//     }
+//     console.log (duplicateNumbers);
+// }
+
+
+//  checkN  (3,6,67,6,23,11,100,8,93,0,17,24,7,1,33,45,28,33,23,12,99,100);
+
+
+
+
+
+
+// --------------------
+// let checkN = [3,6,67,6,23,11,100,8,93,0,17,24,7,1,33,45,28,33,23,12,99,100];
+
+// for  (let i = 0 ; i < checkN.length; i++){
+//     // let = consolNumbers += numbersForCheck[i];
+//     console.log (checkN[i]);
+// }
+// --------------------
+
+
+// let numeros = [5, 5, 5, 5, 5];
+// let todosMayoresQueCinco = numeros.every(num => num == 5);
+// console.log(todosMayoresQueCinco);
+
+
+
+
+// // Create an Array
+// const ages = [32, 33, 16, 40];
+// // Create a Test Function
+// function checkAge(age) {
+//   return age > 18;
+// }
+// // Are all ages over 18?
+// ages.every(checkAge);
